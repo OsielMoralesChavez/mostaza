@@ -1,0 +1,42 @@
+/* 🎨 Paleta de colores principal */
+:root {
+  --color-primario: #222222;   
+  --color-secundario: #17b4fc; 
+  --color-acento: #ae1f23;     
+  --color-fondo: #ffffff;      
+  --color-fondo-alt: #f5f5f5;  /* Gris claro */
+  --color-texto: #333333;      
+  --color-texto-claro: #ffffff; 
+}
+
+body{
+  background-color: var(--color-primario);
+  color: var(--color-texto-claro);
+}
+.navbar-custom {
+  background-color: var(--color-primario);
+  transition: background-color 0.4s ease;
+}
+
+.navbar-scrolled {
+  background-color: color-mix(in srgb, var(--color-secundario) 60%, transparent);
+}
+
+
+/*Cambiar color del texto de los enlaces */
+.navbar-custom .nav-link {
+  color: var(--color-texto-claro); 
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Hover de los enlaces */
+.navbar-custom .nav-link:hover {
+  color: var(--color-texto); /* dorado */
+}
+
+/* Enlace activo */
+.navbar-custom .nav-link.active {
+  color: var(--color-secundario); /* rojo vino */
+  font-weight: 600;
+}

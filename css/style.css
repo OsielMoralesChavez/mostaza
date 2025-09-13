@@ -6,7 +6,7 @@ h4{
   font-size: 1.2rem;
 }
 h5{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 .navbar-custom {
@@ -84,18 +84,43 @@ main {
 @media (max-width: 1000px) and (min-width: 760px) {
   .impacto .card{
     width: 20rem;
-    height: 22rem;
   }
    .impacto .card .card-text {
-    text-align: justify;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .impacto .card {
+    width: 25rem;
+  }
+
+  .impacto .card .card-text {
+    text-align: center;
   }
 }
+
+.card-destacada {
+background-color: #1b9aaa;
+color: #ffffff;
+border: 2px solid #1b9aaa;
+  transform: scale(1.05);     /* hace que se vea un poco más grande */
+  transition: all 0.3s ease;
+}
+
+.card-destacada:hover {
+  filter: brightness(0.8);
+  transform: scale(1.2);
+}
+
+
 
 .titulo{
   color: #a8946b;
 }
 .icono{
-  font-size: 3rem;
+  font-size: 4rem;
   color: #0a2642;
 }
 

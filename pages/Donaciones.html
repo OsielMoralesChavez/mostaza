@@ -11,10 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css">
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -98,7 +100,7 @@
             <h5 class="fw-bold">Apoyo Básico</h5>
             <h3 class="fw-bold">250 MXN</h3>
             <p class="text-muted">Apoya directamente la compra de útiles escolares para un niño, dándoles herramientas para aprender.</p>
-            <a href="pages/donar.html" class="btn botonApoyo w-100">Donar 25€</a>
+            <a href="pages/donar.html" class="btn botonApoyo w-100">Donar 250 MXN</a>
           </div>
         </div>
       </div>
@@ -111,7 +113,7 @@
       <h5 class="fw-bold">Apoyo Intermedio</h5>
       <h3 class="fw-bold">750 MXN</h3>
       <p class="text-muted">Contribuye a sesiones de apoyo psicológico para jóvenes, fomentando su bienestar emocional.</p>
-      <a href="pages/donar.html" class="btn botonApoyo1 w-100">Donar 75€</a>
+      <a href="pages/donar.html" class="btn botonApoyo1 w-100">Donar 750 MXN</a>
     </div>
   </div>
 </div>
@@ -248,7 +250,13 @@
     </div>
   </div>
 </footer>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+		</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -257,4 +265,3 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
-
